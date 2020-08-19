@@ -69,7 +69,7 @@ else :
 
 	<div class="comment-respond" id="respond">
 
-		<h3><?php _e( 'Was this article helpful? How could it be improved?', 'wporg-forums' ); ?></h3>
+		<h3 class="comment-reply-title"><?php _e( 'Was this article helpful? How could it be improved?', 'wporg-forums' ); ?></h3>
 		<?php
 		printf(
 			'<p>%1$s</p><p class="must-log-in">%2$s</p>',
