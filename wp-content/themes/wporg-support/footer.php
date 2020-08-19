@@ -7,6 +7,9 @@
 ?>
 
 	</div><!-- #content -->
-</div><!-- #page -->
+	</div><!-- #page -->
+ </body>
+</html>
+
 
 <?php require WPORGPATH . 'footer.php';
