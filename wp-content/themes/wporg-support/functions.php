@@ -24,6 +24,10 @@ function wporg_support_scripts() {
 
 	wp_enqueue_script( 'wporg-support-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20181209', true );
 	wp_enqueue_script( 'wporg-support-forums', get_template_directory_uri() . '/js/forums.js', array( 'jquery' ), '20200318', true );
+
+	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
+		wp_enqueue_script( 'comment-reply' );
+	}
 }
 add_action( 'wp_enqueue_scripts', 'wporg_support_scripts' );
 
@@ -888,3 +892,12 @@ function bb_is_intl_forum() {
  * Include the Strings for the supporg/update-php page.
  */
 include_once __DIR__ . '/helphub-update-php-strings.php';
+/*
+ * Support HTML5 for comments template.
+ */
+add_theme_support( 'html5',
+	array(
+		'comment-list',
+		'comment-form'
+	)
+);
