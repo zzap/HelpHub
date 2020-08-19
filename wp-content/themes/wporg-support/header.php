@@ -25,12 +25,9 @@ $wporg_global_header_options['in_wrapper'] .= '<a class="skip-link screen-reader
 wporg_get_global_header();
 if ( stristr( WPORGPATH, 'http' ) ) {
 	do_action( 'wp_head' );
-	?>
-	<body <?php body_class( array( 'single-handbook', 'make-docs' ) ); ?>>
-	<?php
 }
-
 ?>
+<body <?php body_class( array( 'single-handbook', 'make-docs' ) ); ?>>
 
 <div id="page" class="site">
 	<a class="skip-link screen-reader-text" href="#main"><?php esc_html_e( 'Skip to content', 'wporg-forums' ); ?></a>
