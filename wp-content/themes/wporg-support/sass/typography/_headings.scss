@@ -31,6 +31,11 @@ h2 {
 h3 {
 	font-size: ms( 4 );
 	font-weight: 400;
+
+	&.comment-reply-title {
+		font-size: ms( 2 );
+		font-weight: 700;
+	}
 }
 
 h4 {
