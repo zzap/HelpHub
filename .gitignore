@@ -7,6 +7,8 @@
 npm-debug*
 node_modules
 vendor
+.svn
+.map
 
 ##
 # PROJECT ROOT
@@ -48,4 +50,5 @@ wp-content/plugins/*
 # except specified themes.
 ##
 wp-content/themes/*
+!wp-content/themes/wporg
 !wp-content/themes/wporg-support
