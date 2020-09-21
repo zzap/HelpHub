@@ -23,9 +23,7 @@ if ( !isset( $wporg_global_header_options['in_wrapper'] ) )
 	$wporg_global_header_options['in_wrapper'] = '';
 $wporg_global_header_options['in_wrapper'] .= '<a class="skip-link screen-reader-text" href="#content">' . esc_html__( 'Skip to content', 'wporg-forums' ) . '</a>';
 wporg_get_global_header();
-if ( stristr( WPORGPATH, 'http' ) ) {
-	do_action( 'wp_head' );
-}
+do_action( 'wp_head' );
 ?>
 <body <?php body_class( array( 'single-handbook', 'make-docs' ) ); ?>>
 
